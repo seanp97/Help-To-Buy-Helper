@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Help To Buy Helper</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Help To Buy Helper</h1>
+    </div>
+
+    <div class="container">
+        <div class="grid-wrapper margin-100">
+            <div>
+                <h3>Enter selling price....</h3>
+                <input id="mortgageSellPrice" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="text" placeholder="Example £275,000" pattern="([0-9]{1,3}).([0-9]{1,3})" />
+            </div>
+
+            <div>
+                <h3>Enter remaining mortgage....</h3>
+                <input id="mortgageRemaining" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" type="text" placeholder="Example £200,000" pattern="([0-9]{1,3}).([0-9]{1,3})" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="results">
+            <button id="Calculate" type="button">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
