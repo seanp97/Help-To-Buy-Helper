@@ -38,6 +38,13 @@ const CommaInput = (elem) => {
 }
 
 
+const SetYear = () => {
+    const d = new Date();
+    document.querySelector('footer h4 span').innerText = d.getFullYear();
+}
+
+
 CommaInput('#mortgageSellPrice');
 CommaInput('#mortgageRemaining');
+SetYear();
 CalculateHTB();
