@@ -44,7 +44,6 @@ input {
     cursor: pointer;
     letter-spacing: 1px;
     font-size: 16px;
-    border-radius: 35px;
 }
 
 .results {
@@ -76,6 +75,18 @@ input {
 
 #result.negative span {
     color: red;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer h4 a {
+    color: #000;
 }
 
 @media(max-width: 900px) {
